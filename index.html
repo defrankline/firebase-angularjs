@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Angularjs + Firebase</title>
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="bower_components/tether/dist/css/tether.min.css"/>
+    <link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="css/layout.css"/>
+</head>
+<body ng-app="app" ng-controller="AppController">
+<!-- Fixed navbar -->
+<nav class="navbar navbar-toggleable-md navbar-inverse fixed-top bg-inverse">
+    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <a class="navbar-brand" href="#">Firebase - Angularjs</a>
+    <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+                <a ui-sref="home" class="nav-link" ui-sref-active="active">Home</a>
+            </li>
+            <li class="nav-item">
+                <a ui-sref="about" class="nav-link" ui-sref-active="active">About</a>
+            </li>
+        </ul>
+        <form class="form-inline mt-2 mt-md-0">
+            <input class="form-control mr-sm-2" type="text" placeholder="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+        </form>
+    </div>
+</nav>
+
+<!-- Begin page content -->
+<div class="container">
+    <ui-view></ui-view>
+</div>
+
+<footer class="footer">
+    <div class="container">
+        <span class="text-muted">Place sticky footer content here.</span>
+    </div>
+</footer>
+<script src="bower_components/angular/angular.min.js"></script>
+<script src="bower_components/angular-ui-router/release/angular-ui-router.min.js"></script>
+<script src="bower_components/angular-resource/angular-resource.min.js"></script>
+<script src="app.js"></script>
+<script src="bower_components/firebase/firebase.js"></script>
+<script>
+    // Initialize Firebase
+    var config = {
+        apiKey: "AIzaSyBQGku3qUer1GniOf06VNuk84p_MivL3Ks",
+        authDomain: "orin-store.firebaseapp.com",
+        databaseURL: "https://orin-store.firebaseio.com",
+        projectId: "orin-store",
+        storageBucket: "",
+        messagingSenderId: "313241851478"
+    };
+    firebase.initializeApp(config);
+</script>
+<script src="bower_components/angularfire/dist/angularfire.min.js"></script>
+<script src="bower_components/jquery/dist/jquery.min.js"></script>
+<script src="bower_components/tether/dist/js/tether.min.js"></script>
+<script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="js/ie10-viewport-bug-workaround.js"></script>
+<script src="app-ctrl.js"></script>
+<script src="services.js"></script>
+<script src="js/home-ctrl.js"></script>
+<script src="js/about-ctrl.js"></script>
+</body>
+</html>
