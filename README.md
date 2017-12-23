@@ -1,10 +1,11 @@
 # firebase-angularjs
 Firebase + Angularjs
 
-#Installation
+# Installation
 npm install, bower install
 
-#edit firebase credentials in firebase.js file accordingly
+# firebase
+edit firebase credentials in firebase.js file accordingly
 
-#run
+# run
 $ lite-server
