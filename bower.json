@@ -24,6 +24,10 @@
     "bootstrap": "v4.0.0-alpha.6",
     "firebase": "^4.8.1",
     "angularfire": "^2.3.0",
-    "font-awesome": "fontawesome#^4.7.0"
+    "font-awesome": "fontawesome#^4.7.0",
+    "angular-spinner": "^1.0.1",
+    "angular-animate": "^1.6.8",
+    "angular-touch": "^1.6.8",
+    "angular-bootstrap": "^2.5.0"
   }
 }
