@@ -1,5 +1,4 @@
-# firebase-angularjs
-Firebase + Angularjs
+#Firebase + Angularjs
 
 # Installation
 npm install, bower install
